@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="cabinet-panel">
+    <header class="header">
+        <a href="admin-panel.html" class="logo">
+            <img src="img/logo-2.png" alt="Диетовед" />
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-toggle-menu" data-toggle-element=".cabinet-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+                    </button>
+                    <ul class="nav cabinet-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="user-header-panel">
+                        <div class="btn-group user-panel-button">
+                            <div class="user-photo">
+                                <img src="img/users/1.jpg" alt="User Name" />
+                            </div>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Name
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/user.svg" alt="Профиль" />
+                                    </i>
+                                    <span class="drop-item-text">Профиль</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/server.svg" alt="Сервис" />
+                                    </i>
+                                    <span class="drop-item-text">Сервис</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/graduation-cap-outline.svg" alt="Обучение" />
+                                    </i>
+                                    <span class="drop-item-text">Обучение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cabinet-content-section full-width profile-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card profile-wrap">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-5">
+                                    <div class="photo">
+                                        <img src="img/users/1.jpg" alt="some text" />
+                                    </div>
+                                    <div class="col-12 text-center mt-3 photos-panel">
+                                        <button
+                                                type="button"
+                                                class="btn btn-gradient add-photo"
+                                                data-fancybox
+                                                data-src="#add-photo"
+                                        >
+                                            Добавить фото
+                                        </button>
+                                        <button class="remove-btn">
+                                            Удалить фото
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-7">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="input-group mt-4 bg-group">
+                                                <input type="text" class="form-control" placeholder="Введите ваше имя" aria-label="Введите ваше имя">
+                                            </div>
+                                            <div class="input-group mt-4 bg-group">
+                                                <input type="text" class="form-control" placeholder="Введите вашу фамилию" aria-label="Введите вашу фамилию">
+                                            </div>
+                                            <div class="input-group mt-4 bg-group">
+                                                <select class="form-control custom-select countries" name="country">
+                                                    <option selected disabled>Выберите страну</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-group mt-4 bg-group">
+                                                <input type="text" class="form-control" placeholder="Ваш город" aria-label="Ваш город">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-group mt-4 bg-group">
+                                                <input type="email" class="form-control" placeholder="Введите ваш e-mail" aria-label="Введите ваш e-mail">
+                                            </div>
+                                            <div class="input-group mt-4 bg-group">
+                                                <input type="tel" class="form-control" placeholder="Введите ваш телефон" aria-label="Введите ваш телефон">
+                                            </div>
+                                            <div class="input-group mt-4 bg-group">
+                                                <input type="password" class="form-control" placeholder="Ваш пароль" aria-label="Ваш пароль">
+                                            </div>
+                                            <div class="input-group mt-4 bg-group">
+                                                <input type="password" class="form-control" placeholder="Повторите пароль" aria-label="Повторите пароль">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr mt-5" />
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="card-title">Тип аккаунта</h5>
+                                    <div class="account-type-settings">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <p class="widget-title text-md-right">Личный</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <label class="form-check checkbox-ios-theme">
+                                                            <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                            <span class="form-check-bg"></span>
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <p class="widget-title text-md-right">Профессиональный</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <label class="form-check checkbox-ios-theme">
+                                                            <input class="form-check-input select-all" checked type="checkbox" value="select-all">
+                                                            <span class="form-check-bg"></span>
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <h5 class="card-title">Специальность</h5>
+                            <hr class="hr" />
+                            <div class="input-group align-content-start mb-3 check-input-wrap">
+                                <label class="form-check radio-theme special-radio circle-theme">
+                                    <input type="radio" name="special" class="form-check-input">
+                                    <span class="form-check-icon"></span>
+                                    <span class="form-check-label">Врач</span>
+                                </label>
+                                <div class="input-group bg-group check-input">
+                                    <input type="text" class="form-control" placeholder="Специалазация" aria-label="Специалазация">
+                                </div>
+                            </div>
+                            <div class="input-group align-content-start mb-3">
+                                <label class="form-check radio-theme circle-theme">
+                                    <input type="radio" name="special" class="form-check-input">
+                                    <span class="form-check-icon"></span>
+                                    <span class="form-check-label">Консультант по питанию</span>
+                                </label>
+                            </div>
+                            <div class="input-group align-content-start mb-3">
+                                <label class="form-check radio-theme circle-theme">
+                                    <input type="radio" name="special" class="form-check-input">
+                                    <span class="form-check-icon"></span>
+                                    <span class="form-check-label">Тренер</span>
+                                </label>
+                            </div>
+                            <div class="input-group bg-group mb-2 check-input-wrap">
+                                <label class="form-check radio-theme special-radio circle-theme">
+                                    <input type="radio" name="special" class="form-check-input">
+                                    <span class="form-check-icon"></span>
+                                </label>
+                                <div class="input-group bg-group check-input">
+                                    <input type="text" class="form-control mt-1" placeholder="Другая специальность" aria-label="Другая специальность">
+                                </div>
+                            </div>
+                            <div class="input-group bg-group mt-4 d-block">
+                                <p class="label-theme mb-2">Напишите о себе</p>
+                                <textarea name="about-me" cols="5" rows="3" class="form-control"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title black mt-4">Услуги</h5>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="card-title black text-center mt-4">Стоимость</h5>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="row mb-1">
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-9">
+                                            <p class="widget-title mb-0">Составление пищевого рациона</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <input type="text" value="100" class="enable-edit" />
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-9">
+                                            <p class="widget-title mb-0">Онлайн-консультация</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <input type="text" value="100" class="enable-edit" />
+                                </div>
+                            </div>
+                            <div class="row new-service mb-1">
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label class="form-check checkbox-ios-theme mt-2">
+                                                <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="input-group bg-group mb-2">
+                                                <input type="text" class="form-control" placeholder="Другая услуга" aria-label="Другая услуга">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <input type="text" value="100" class="enable-edit" />
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-12 text-center">
+                                    <button class="btn add-service">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <h5 class="card-title float-left">Осталось дней использования:</h5>
+                            <input type="text" value="100" class="enable-edit float-right" />
+                            <hr class="hr" />
+                            <p class="green">Продлить срок использования сервиса</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="price-block-item">
+                                        <p>30 дней</p>
+                                        <p class="price">0грн</p>
+                                        <button
+                                                type="button"
+                                                class="btn btn-gradient small"
+                                        >
+                                            Продлить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="price-block-item">
+                                        <p>180 дней</p>
+                                        <p class="price"><span class="old-price">175</span>89грн</p>
+                                        <button
+                                                type="button"
+                                                class="btn btn-gradient small"
+                                        >
+                                            Продлить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="price-block-item">
+                                        <p>360 дней</p>
+                                        <p class="price"><span class="old-price">746</span>480грн</p>
+                                        <button
+                                                type="button"
+                                                class="btn btn-gradient small"
+                                        >
+                                            Продлить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-9">
+                                    <h5 class="card-title black widget-title mb-0 mt-1">Участвовать в рейтинге</h5>
+                                </div>
+                                <div class="col-3">
+                                    <label class="form-check checkbox-ios-theme">
+                                        <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                        <span class="form-check-bg"></span>
+                                        <span class="form-check-icon"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href="#" class="green">Поднять профиль</a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="price-block-item">
+                                        <p>17 дней</p>
+                                        <p class="price"><span class="old-price">175</span>89грн</p>
+                                        <button
+                                                type="button"
+                                                class="btn btn-gradient small"
+                                        >
+                                            Продлить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="price-block-item">
+                                        <p>30 дней</p>
+                                        <p class="price"><span class="old-price">746</span>480грн</p>
+                                        <button
+                                                type="button"
+                                                class="btn btn-gradient small"
+                                        >
+                                            Продлить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="card-title float-left mt-5">
+                                <span class="float-left">Использовать сервис бесплатно</span>
+                                <i class="text-icon float-left">
+                                    <img src="img/icons/information.svg" alt="Настройка виджетов" />
+                                </i>
+                            </h5>
+                        </div>
+                    </div>
+                    <button
+                            type="button"
+                            class="btn btn-gradient float-right"
+                    >
+                        Сохранить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="seo-text">
+                        <p>Начните работу с Bootstrap, самым популярным в мире фреймворком для создания быстродействующих мобильных сайтов с загрузочным CDN и шаблонами стартовой страницы.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="nav cabinet-menu footer-nav text-right">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="popup add-photo-popup" id="add-photo">
+    <div class="popup-wrap">
+        <h3>Фотография на вашей странице</h3>
+        <p class="mb-3">Выбранная область будет показываться на Вашей странице.<br />
+            Если изображение ориентировано неправильно, фотографию можно повернуть.</p>
+        <img src="img/users/1.jpg" id="crop-photo" class="crop-photo" alt="some text" />
+        <button
+                type="button"
+                class="btn btn-gradient btn-lg mt-5"
+        >
+            Сохранить
+        </button>
+    </div>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

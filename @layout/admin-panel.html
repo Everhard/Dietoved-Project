@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="admin-panel">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a href="admin-panel.html" class="logo">
+                        <img src="img/logo-2.png" alt="Диетовед" />
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="nav-link logout-link" href="#">
+                        <span class="link-text">login</span>
+                        <i class="link-icon">
+                            <img src="img/icons/logout.png" alt="login" />
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="admin-sidebar-section">
+        <button class="btn-toggle-menu" data-toggle-element=".admin-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+        </button>
+        <ul class="list-group admin-menu">
+            <li class="list-group-item">
+                <a href="#">Главная</a>
+            </li>
+            <li class="list-group-item">
+                <a href="articles-for-check.html">Статьи на проверку</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Пользовательское соглашение</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Информация для специалистов</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+    </section>
+    <section class="admin-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-7">
+                                    <h4 class="card-title mt-2">Стоимость подписки</h4>
+                                </div>
+                                <div class="col-md-5 col-sm-5">
+                                    <div class="dropdown select text-right">
+                                        <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Валюта
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <span class="dropdown-item">USD</span>
+                                            <span class="dropdown-item">EUR</span>
+                                            <span class="dropdown-item">JPY</span>
+                                            <span class="dropdown-item">GBP</span>
+                                            <span class="dropdown-item">CHF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="days-count text-center">
+                                        <h4 class="card-title black">30 дней</h4>
+                                        <div class="input-group plus-minus">
+                                            <input type="text" class="form-control bg" max="100" min="5" step="5" value="15" />
+                                            <div class="input-group-append">
+                                                <button class="btn plus" type="button">+</button>
+                                                <button class="btn minus" type="button">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="days-count text-center">
+                                        <h4 class="card-title black">180 дней</h4>
+                                        <div class="input-group plus-minus">
+                                            <input type="text" class="form-control bg" max="100" min="5" step="5" value="15" />
+                                            <div class="input-group-append">
+                                                <button class="btn plus" type="button">+</button>
+                                                <button class="btn minus" type="button">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="days-count text-center">
+                                        <h4 class="card-title black">360 дней</h4>
+                                        <div class="input-group plus-minus">
+                                            <input type="text" class="form-control bg" max="100" min="5" step="5" value="15" />
+                                            <div class="input-group-append">
+                                                <button class="btn plus" type="button">+</button>
+                                                <button class="btn minus" type="button">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-7">
+                                    <h4 class="card-title mt-2">Стоимость обучения</h4>
+                                </div>
+                                <div class="col-md-5 col-sm-5">
+                                    <div class="dropdown select text-right">
+                                        <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Валюта
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <span class="dropdown-item">USD</span>
+                                            <span class="dropdown-item">EUR</span>
+                                            <span class="dropdown-item">JPY</span>
+                                            <span class="dropdown-item">GBP</span>
+                                            <span class="dropdown-item">CHF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="days-count text-center">
+                                        <h4 class="card-title black">Базовый</h4>
+                                        <div class="input-group plus-minus">
+                                            <input type="text" class="form-control bg" max="100" min="5" step="5" value="15" />
+                                            <div class="input-group-append">
+                                                <button class="btn plus" type="button">+</button>
+                                                <button class="btn minus" type="button">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="days-count text-center">
+                                        <h4 class="card-title black">Продвинутый</h4>
+                                        <div class="input-group plus-minus">
+                                            <input type="text" class="form-control bg" max="100" min="5" step="5" value="15" />
+                                            <div class="input-group-append">
+                                                <button class="btn plus" type="button">+</button>
+                                                <button class="btn minus" type="button">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="days-count text-center">
+                                        <h4 class="card-title black">ПРО</h4>
+                                        <div class="input-group plus-minus">
+                                            <input type="text" class="form-control bg" max="100" min="5" step="5" value="15" />
+                                            <div class="input-group-append">
+                                                <button class="btn plus" type="button">+</button>
+                                                <button class="btn minus" type="button">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5">
+                                    <h4 class="card-title mt-2">Пользователи</h4>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="input-group search float-right">
+                                        <input type="text" class="form-control bg" placeholder="Найти пользователя" aria-label="Найти пользователя" />
+                                        <div class="input-group-append">
+                                            <button class="btn btn-gradient" type="button">
+                                                <i class="btn-icon">
+                                                    <img src="img/icons/search.png" alt="Найти пользователя" />
+                                                </i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="col-12">
+                                <div class="dropdown select">
+                                    <button class="btn btn-bg dropdown-toggle btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Выберите действие
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <span class="dropdown-item">Активировать</span>
+                                        <span class="dropdown-item">Опустить</span>
+                                        <span class="dropdown-item">Прокачать</span>
+                                        <span class="dropdown-item">Убить</span>
+                                        <span class="dropdown-item">Удалить</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="users-table">
+                                        <div class="h-scroll">
+                                            <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <th>
+                                                        <p>Фото</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>Инициалы</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>E-mail</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>Тип аккаунта</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>Активный</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>Оплачено</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>+/- дней подписки</p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <label class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div class="user-photo">
+                                                            <img src="img/users/1.jpg" alt="some text" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>vah@gmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Спецталист</p>
+                                                    </td>
+                                                    <td>
+                                                        <label class="form-check green">
+                                                            <input class="form-check-input" type="checkbox" value="select-all">
+                                                            <span class="form-check-icon"></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <p>2434</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="days-count text-center">
+                                                            <div class="input-group plus-minus small">
+                                                                <input type="text" class="form-control form-control-sm bg-form-control" max="100" min="5" step="5" value="15" />
+                                                                <div class="input-group-append">
+                                                                    <button class="btn plus" type="button">+</button>
+                                                                    <button class="btn minus" type="button">-</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

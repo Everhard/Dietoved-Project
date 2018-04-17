@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="cabinet-panel">
+    <header class="header">
+        <a href="admin-panel.html" class="logo">
+            <img src="img/logo-2.png" alt="Диетовед" />
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-toggle-menu" data-toggle-element=".cabinet-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+                    </button>
+                    <ul class="nav cabinet-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="user-header-panel">
+                        <div class="btn-group user-panel-button">
+                            <div class="user-photo">
+                                <img src="img/users/1.jpg" alt="User Name" />
+                            </div>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Name
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/user.svg" alt="Профиль" />
+                                    </i>
+                                    <span class="drop-item-text">Профиль</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/server.svg" alt="Сервис" />
+                                    </i>
+                                    <span class="drop-item-text">Сервис</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/graduation-cap-outline.svg" alt="Обучение" />
+                                    </i>
+                                    <span class="drop-item-text">Обучение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cabinet-sidebar-section">
+        <div class="v-scroll">
+            <ul class="list-group cabinet-sidebar-menu">
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/add-button.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/add-button-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню</p>
+                    </a>
+                </li>
+                <li class="list-group-item active">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/users.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/users-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 2</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/mail.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/mail-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 3</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/notebook.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/notebook-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 4</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/settings.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/settings-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 5</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="cabinet-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card post-theme">
+                        <div class="card-block text-center">
+                            <h4 class="card-title mt-2 float-left">База данных</h4>
+                            <div class="input-group search float-left">
+                                <input type="text" class="form-control bg" placeholder="Найти пользователя" aria-label="Найти пользователя" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-gradient" type="button">
+                                        <i class="btn-icon">
+                                            <img src="img/icons/search.png" alt="Найти пользователя" />
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="h-scroll">
+                                <table class="table articles-inf-table">
+                                    <thead>
+                                        <tr>
+                                        <th>
+                                            <p>Фото</p>
+                                        </th>
+                                        <th class="text-left">
+                                            <p>ФИО</p>
+                                        </th>
+                                        <th>
+                                            <p>Пол</p>
+                                        </th>
+                                        <th>
+                                            <p>Возраст</p>
+                                        </th>
+                                        <th>
+                                            <p>Телефон</p>
+                                        </th>
+                                        <th>
+                                            <p>Цель</p>
+                                        </th>
+                                        <th>
+                                            <p>Пункт</p>
+                                        </th>
+                                        <th>
+                                            <p>Сообщения</p>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>
+                                            <div class="user-photo sm">
+                                                <img src="img/users/1.jpg" alt="some text" />
+                                            </div>
+                                        </td>
+                                        <td class="text-left">
+                                            <p>Вахтирян</p>
+                                            <p>Сердюк</p>
+                                            <p>Сергійович</p>
+                                        </td>
+                                        <td>
+                                            <p>М</p>
+                                        </td>
+                                        <td>
+                                            <p>28</p>
+                                        </td>
+                                        <td>
+                                            <p>+38 (098) 123-45-67</p>
+                                        </td>
+                                        <td>
+                                            <p>З'їсти 4 піци зараз</p>
+                                        </td>
+                                        <td>
+                                            <p>New York Street Pizza</p>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-gradient btn-email">
+                                                <i class="btn-icon">
+                                                    <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                </i>
+                                            </a>
+                                            <span class="count">1</span>
+                                        </td>
+                                    </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-photo sm">
+                                                    <img src="img/users/1.jpg" alt="some text" />
+                                                </div>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Вахтирян</p>
+                                                <p>Сердюк</p>
+                                                <p>Сергійович</p>
+                                            </td>
+                                            <td>
+                                                <p>М</p>
+                                            </td>
+                                            <td>
+                                                <p>28</p>
+                                            </td>
+                                            <td>
+                                                <p>+38 (098) 123-45-67</p>
+                                            </td>
+                                            <td>
+                                                <p>З'їсти 4 піци зараз</p>
+                                            </td>
+                                            <td>
+                                                <p>New York Street Pizza</p>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-gradient btn-email">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/mail-outline-white.svg" alt="Сообщения" />
+                                                    </i>
+                                                </a>
+                                                <span class="count">1</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

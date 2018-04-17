@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="cabinet-panel">
+    <header class="header">
+        <a href="admin-panel.html" class="logo">
+            <img src="img/logo-2.png" alt="Диетовед" />
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-toggle-menu" data-toggle-element=".cabinet-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+                    </button>
+                    <ul class="nav cabinet-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="user-header-panel">
+                        <div class="btn-group user-panel-button">
+                            <div class="user-photo">
+                                <img src="img/users/1.jpg" alt="User Name" />
+                            </div>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Name
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/user.svg" alt="Профиль" />
+                                    </i>
+                                    <span class="drop-item-text">Профиль</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/server.svg" alt="Сервис" />
+                                    </i>
+                                    <span class="drop-item-text">Сервис</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/graduation-cap-outline.svg" alt="Обучение" />
+                                    </i>
+                                    <span class="drop-item-text">Обучение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="post-filter-panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <div class="dropdown select">
+                            <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Специальность
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item">Тренер</span>
+                                <span class="dropdown-item">Врач</span>
+                                <span class="dropdown-item">Диетолог</span>
+                                <span class="dropdown-item">Как пример</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <div class="dropdown select text-right">
+                            <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Страна
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item">Украина</span>
+                                <span class="dropdown-item">Польща</span>
+                                <span class="dropdown-item">Германия</span>
+                                <span class="dropdown-item">Италия</span>
+                                <span class="dropdown-item">Румыния</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <div class="dropdown select text-right">
+                            <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Город
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item">Киев</span>
+                                <span class="dropdown-item">Львов</span>
+                                <span class="dropdown-item">Черновцы</span>
+                                <span class="dropdown-item">Харьков</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-right mb-2 mb-md-0">
+                        <div class="dropdown select text-center">
+                            <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Сортировать
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item">по рейтингу</span>
+                                <span class="dropdown-item">по алфавиту</span>
+                                <span class="dropdown-item">по позрасту</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cabinet-content-section full-width blog-grid-theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card doctor-item">
+                        <div class="card-block">
+                            <div class="rating-wrap mb-3 float-left" data-rating="3">
+                                <i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i
+                                    class="star"></i>
+                            </div>
+                            <p class="doctor-inf float-left">(3.1)</p>
+                            <p class="doctor-inf float-right">Отзывы (41)</p>
+                            <a href="#" class="post-photo">
+                                <img class="card-img-top" data-src="http://dreamstop.com/wp-content/uploads/2013/06/doctor-dream-meaning.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Артасян Чихрок</h5>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Специальность:</p>
+                                    <p class="specialist green mb-1 text-right">Диетолог</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Услуги:</p>
+                                    <p class="services green mb-1 text-right">Успокойщик</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Стоимость онлайн-консультации:</p>
+                                    <p class="price green mb-1 text-right">1000грн</p>
+                                </div>
+                                <a href="specialist.html" class="link-more float-sm-left">Подробнее</a>
+                                <div class="text-center float-left post-btn-group pt-2">
+                                    <button
+                                            class="btn btn-gradient choose-doctor"
+                                            type="button"
+                                            data-fancybox
+                                            data-src="#advice-popup"
+                                    >Консультация</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card doctor-item">
+                        <div class="card-block">
+                            <div class="rating-wrap mb-3 float-left" data-rating="3">
+                                <i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i
+                                    class="star"></i>
+                            </div>
+                            <p class="doctor-inf float-left">(3.1)</p>
+                            <p class="doctor-inf float-right">Отзывы (41)</p>
+                            <a href="#" class="post-photo">
+                                <img class="card-img-top" data-src="https://fthmb.tqn.com/649CSgSWqoN680E4QvxNBtkgAKE=/1280x853/filters:fill(auto,1)/doctor_467179149-56b08aaf3df78cf772cf9262.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Миранда Канавали</h5>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Специальность:</p>
+                                    <p class="specialist green mb-1 text-right">Тренер</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Услуги:</p>
+                                    <p class="services green mb-1 text-right">Успокойщик</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Стоимость онлайн-консультации:</p>
+                                    <p class="price green mb-1 text-right">3000грн</p>
+                                </div>
+                                <a href="specialist.html" class="link-more float-sm-left">Подробнее</a>
+                                <div class="text-center float-left post-btn-group pt-2">
+                                    <button
+                                            class="btn btn-gradient choose-doctor"
+                                            type="button"
+                                            data-fancybox
+                                            data-src="#advice-popup"
+                                    >Консультация</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card doctor-item">
+                        <div class="card-block">
+                            <div class="rating-wrap mb-3 float-left" data-rating="3">
+                                <i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i
+                                    class="star"></i>
+                            </div>
+                            <p class="doctor-inf float-left">(3.1)</p>
+                            <p class="doctor-inf float-right">Отзывы (41)</p>
+                            <a href="#" class="post-photo">
+                                <img class="card-img-top" data-src="http://dreamstop.com/wp-content/uploads/2013/06/doctor-dream-meaning.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Артасян Чихрок</h5>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Специальность:</p>
+                                    <p class="specialist green mb-1 text-right">Диетолог</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Услуги:</p>
+                                    <p class="services green mb-1 text-right">Успокойщик</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Стоимость онлайн-консультации:</p>
+                                    <p class="price green mb-1 text-right">1000грн</p>
+                                </div>
+                                <a href="specialist.html" class="link-more float-sm-left">Подробнее</a>
+                                <div class="text-center float-left post-btn-group pt-2">
+                                    <button
+                                            class="btn btn-gradient choose-doctor"
+                                            type="button"
+                                            data-fancybox
+                                            data-src="#advice-popup"
+                                    >Консультация</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card doctor-item">
+                        <div class="card-block">
+                            <div class="rating-wrap mb-3 float-left" data-rating="3">
+                                <i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i
+                                    class="star"></i>
+                            </div>
+                            <p class="doctor-inf float-left">(3.1)</p>
+                            <p class="doctor-inf float-right">Отзывы (41)</p>
+                            <a href="#" class="post-photo">
+                                <img class="card-img-top" data-src="https://fthmb.tqn.com/649CSgSWqoN680E4QvxNBtkgAKE=/1280x853/filters:fill(auto,1)/doctor_467179149-56b08aaf3df78cf772cf9262.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Миранда Канавали</h5>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Специальность:</p>
+                                    <p class="specialist green mb-1 text-right">Тренер</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Услуги:</p>
+                                    <p class="services green mb-1 text-right">Успокойщик</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Стоимость онлайн-консультации:</p>
+                                    <p class="price green mb-1 text-right">3000грн</p>
+                                </div>
+                                <a href="specialist.html" class="link-more float-sm-left">Подробнее</a>
+                                <div class="text-center float-left post-btn-group pt-2">
+                                    <button
+                                            class="btn btn-gradient choose-doctor"
+                                            type="button"
+                                            data-fancybox
+                                            data-src="#advice-popup"
+                                    >Консультация</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card doctor-item">
+                        <div class="card-block">
+                            <div class="rating-wrap mb-3 float-left" data-rating="3">
+                                <i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i
+                                    class="star"></i>
+                            </div>
+                            <p class="doctor-inf float-left">(3.1)</p>
+                            <p class="doctor-inf float-right">Отзывы (41)</p>
+                            <a href="#" class="post-photo">
+                                <img class="card-img-top" data-src="http://dreamstop.com/wp-content/uploads/2013/06/doctor-dream-meaning.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Артасян Чихрок</h5>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Специальность:</p>
+                                    <p class="specialist green mb-1 text-right">Диетолог</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Услуги:</p>
+                                    <p class="services green mb-1 text-right">Успокойщик</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Стоимость онлайн-консультации:</p>
+                                    <p class="price green mb-1 text-right">1000грн</p>
+                                </div>
+                                <a href="specialist.html" class="link-more float-sm-left">Подробнее</a>
+                                <div class="text-center float-left post-btn-group pt-2">
+                                    <button
+                                            class="btn btn-gradient choose-doctor"
+                                            type="button"
+                                            data-fancybox
+                                            data-src="#advice-popup"
+                                    >Консультация</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card doctor-item">
+                        <div class="card-block">
+                            <div class="rating-wrap mb-3 float-left" data-rating="3">
+                                <i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i
+                                    class="star"></i>
+                            </div>
+                            <p class="doctor-inf float-left">(3.1)</p>
+                            <p class="doctor-inf float-right">Отзывы (41)</p>
+                            <a href="#" class="post-photo">
+                                <img class="card-img-top" data-src="https://fthmb.tqn.com/649CSgSWqoN680E4QvxNBtkgAKE=/1280x853/filters:fill(auto,1)/doctor_467179149-56b08aaf3df78cf772cf9262.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Миранда Канавали</h5>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Специальность:</p>
+                                    <p class="specialist green mb-1 text-right">Тренер</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Услуги:</p>
+                                    <p class="services green mb-1 text-right">Успокойщик</p>
+                                </div>
+                                <div class="detail-row d-flex justify-content-between">
+                                    <p class="mb-1">Стоимость онлайн-консультации:</p>
+                                    <p class="price green mb-1 text-right">3000грн</p>
+                                </div>
+                                <a href="specialist.html" class="link-more float-sm-left">Подробнее</a>
+                                <div class="text-center float-left post-btn-group pt-2">
+                                    <button
+                                            class="btn btn-gradient choose-doctor"
+                                            type="button"
+                                            data-fancybox
+                                            data-src="#advice-popup"
+                                    >Консультация</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center mb-4 mt-1">
+                        <a href="#"
+                           class="btn btn-gradient btn-filter"
+                        >Загрузить все</a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <nav class="text-center">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#"><span>В начало</span></a></li>
+                            <li class="page-item"><a class="page-link active" href="#"><span>1</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><span>2</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><span>3</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><span>В конец</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="seo-text">
+                        <p>Начните работу с Bootstrap, самым популярным в мире фреймворком для создания быстродействующих мобильных сайтов с загрузочным CDN и шаблонами стартовой страницы.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="nav cabinet-menu footer-nav text-right">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="advice-popup" class="popup advice-popup">
+    <div class="popup-wrap">
+        <form class="form">
+            <h5 class="popup-title">Запись на консультацию</h5>
+            <div class="detail-row d-flex justify-content-between mb-3">
+                <p class="mt-0">Специалист:</p>
+                <strong class="specialist-name">Артасян Чихрок</strong>
+            </div>
+            <div class="detail-row d-flex justify-content-between mb-3">
+                <p class="mt-0">Специальность:</p>
+                <strong class="specialist-type">Диетолог</strong>
+            </div>
+            <div class="detail-row d-flex justify-content-between align-content-center mb-3">
+                <p class="mt-2">Тип услуги:</p>
+                <div class="dropdown select text-right">
+                    <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Рецепт
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item">Подказка</span>
+                        <span class="dropdown-item">Консультация</span>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-row d-flex justify-content-between mb-3">
+                <p class="mt-0">Стоимость:</p>
+                <strong class="specialist-price">100грн</strong>
+            </div>
+            <div class="detail-row d-flex justify-content-between align-content-center mb-3">
+                <p class="mt-2">Выбрать дату:</p>
+                <div class="input-group">
+                    <input type="text" class="form-control bg select-theme" datepicker />
+                </div>
+            </div>
+            <div class="detail-row d-flex justify-content-between align-content-center mb-3">
+                <p class="mt-2">Выбрать время:</p>
+                <div class="input-group">
+                    <input type="text" class="form-control bg select-theme" timepicker />
+                </div>
+            </div>
+            <a href="#"
+                    class="btn btn-lg btn-gradient"
+            >Записаться</a>
+        </form>
+    </div>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

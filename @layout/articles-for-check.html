@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="admin-panel">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a href="admin-panel.html" class="logo">
+                        <img src="img/logo-2.png" alt="Диетовед" />
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="nav-link logout-link" href="#">
+                        <span class="link-text">login</span>
+                        <i class="link-icon">
+                            <img src="img/icons/logout.png" alt="login" />
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="admin-sidebar-section">
+        <button class="btn-toggle-menu" data-toggle-element=".admin-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+        </button>
+        <ul class="list-group admin-menu">
+            <li class="list-group-item">
+                <a href="#">Главная</a>
+            </li>
+            <li class="list-group-item active">
+                <a href="articles-for-check.html">Статьи на проверку</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Пользовательское соглашение</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Информация для специалистов</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+    </section>
+    <section class="admin-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class="card-title mt-2">Статьи на проверку</h4>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="input-group-prepend article-title-input">
+                                        <input type="email" class="form-control bg-form-control" placeholder="Введите название статьи..." aria-label="Введите название статьи...">
+                                    </div>
+                                    <div id="editor"></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-6">
+                                            <button
+                                                    class="btn btn-lg btn-gradient btn-editor mb-4"
+                                                    type="button"
+                                            >Опубликовать</button>
+                                        </div>
+                                        <div class="col-md-12 col-sm-6">
+                                            <button
+                                                    class="btn btn-lg btn-gradient btn-editor"
+                                                    type="button"
+                                            >Сохранить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input-group search">
+                                        <input type="text" class="form-control bg" placeholder="Найти статью или автора" aria-label="Найти статью или автора" />
+                                        <div class="input-group-append">
+                                            <button class="btn btn-gradient" type="button">
+                                                <i class="btn-icon">
+                                                    <img src="img/icons/search.png" alt="Найти статью или автора" />
+                                                </i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="h-scroll">
+                                        <table class="table articles-inf-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left">
+                                                        <p>Название</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>Рубрика</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>Автор</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>Всего статей у автора</p>
+                                                    </th>
+                                                    <th>
+                                                        <p>На проверку</p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <p>Почему болит живот</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Правильное питание</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>12</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>11</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <p>Есть после 6</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Правильное питание</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>12</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>11</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <p>Сколько раз нужно кушать</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Правильное питание</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>12</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>11</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <p>Подбираем свою порцию</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Правильное питание</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>12</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>11</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <p>Составлям рацион</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Правильное питание</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>12</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>11</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <p>Веганы это не мы</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Правильное питание</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>12</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>11</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <p>Мясо залог успеха</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Правильное питание</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>12</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>11</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <p>Выбираем колбасу</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Правильное питание</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Вахтирян Сердюк Сергійович</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>12</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>11</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

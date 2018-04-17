@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="cabinet-panel">
+    <header class="header">
+        <a href="admin-panel.html" class="logo">
+            <img src="img/logo-2.png" alt="Диетовед" />
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-toggle-menu" data-toggle-element=".cabinet-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+                    </button>
+                    <ul class="nav cabinet-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="user-header-panel">
+                        <div class="btn-group user-panel-button">
+                            <div class="user-photo">
+                                <img src="img/users/1.jpg" alt="User Name" />
+                            </div>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Name
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/user.svg" alt="Профиль" />
+                                    </i>
+                                    <span class="drop-item-text">Профиль</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/server.svg" alt="Сервис" />
+                                    </i>
+                                    <span class="drop-item-text">Сервис</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/graduation-cap-outline.svg" alt="Обучение" />
+                                    </i>
+                                    <span class="drop-item-text">Обучение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cabinet-sidebar-section settings-sidebar">
+        <div class="v-scroll">
+            <ul class="list-group cabinet-sidebar-menu">
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/add-button.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/add-button-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню</p>
+                    </a>
+                </li>
+                <li class="list-group-item active">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/users.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/users-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 2</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/mail.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/mail-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 3</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/notebook.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/notebook-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 4</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/settings.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/settings-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 5</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="cabinet-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card widgets-settings-wrap float-left">
+                        <div class="card-block">
+                            <h5 class="card-title float-left">
+                                <span class="float-left">Настройка виджетов</span>
+                                <i class="text-icon float-left">
+                                    <img src="img/icons/information.svg" alt="Настройка виджетов" />
+                                </i>
+                            </h5>
+                            <hr class="hr" />
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-8 col-sm-8 col-md-6">
+                                            <p class="widget-title">Название виджета</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-6">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-8 col-md-6">
+                                            <p class="widget-title">Название виджета</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-6">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" checked type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-8 col-md-6">
+                                            <p class="widget-title">Название виджета</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-6">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-8 col-md-6">
+                                            <p class="widget-title">Название виджета</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-6">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" checked type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-8 col-sm-8 col-md-6">
+                                            <p class="widget-title">Название виджета</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-6">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" checked type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-8 col-md-6">
+                                            <p class="widget-title">Название виджета</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-6">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-8 col-md-6">
+                                            <p class="widget-title">Название виджета</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-6">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" checked type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-8 col-md-6">
+                                            <p class="widget-title">Название виджета</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-6">
+                                            <label class="form-check checkbox-ios-theme">
+                                                <input class="form-check-input select-all" type="checkbox" value="select-all">
+                                                <span class="form-check-bg"></span>
+                                                <span class="form-check-icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <h5 class="card-title float-left">
+                                <span class="float-left">Добавление продуктов и блюд</span>
+                                <i class="text-icon float-left">
+                                    <img src="img/icons/information.svg" alt="Настройка виджетов" />
+                                </i>
+                            </h5>
+                            <hr class="hr" />
+                            <div class="inf-for-swipe">
+                                <img src="img/icons/swipe.svg" alt="Листа" />
+                            </div>
+                            <div class="h-scroll">
+                                <table class="table articles-inf-table">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-left">
+                                            <p>Название продукта</p>
+                                        </th>
+                                        <th>
+                                            <p>Вес, г.</p>
+                                        </th>
+                                        <th>
+                                            <p>Белки</p>
+                                        </th>
+                                        <th>
+                                            <p>Жиры</p>
+                                        </th>
+                                        <th>
+                                            <p>Углеводы</p>
+                                        </th>
+                                        <th>
+                                            <p>Вaода</p>
+                                        </th>
+                                        <th>
+                                            <p>Калории</p>
+                                        </th>
+                                        <th>
+                                            <p>Пищевые волокна</p>
+                                        </th>
+                                        <th>
+                                            <p>Сахар</p>
+                                        </th>
+                                        <th>
+                                            <p>ГИ</p>
+                                        </th>
+                                        <th>
+                                            <p>Витамины</p>
+                                        </th>
+                                        <th>
+                                            <p>Минералы</p>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Гречка</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Макарони</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Овсянка</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Овощи</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Фрукты</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Грудка куриная</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Колбаса</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Сосиски</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Ананас</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-left">Печеньки</p>
+                                        </td>
+                                        <td>
+                                            <p class="weight">100</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p>10</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">A, B, C</p>
+                                        </td>
+                                        <td>
+                                            <p class="green">K, Mg, Ca</p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr class="hr" />
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <button class="add-new absolute">
+                                        + add new agenda
+                                    </button>
+                                    <button
+                                            type="button"
+                                            class="btn btn-gradient float-sm-right"
+                                    >
+                                        Сохранить блюдо
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="seo-text">
+                        <p>Начните работу с Bootstrap, самым популярным в мире фреймворком для создания быстродействующих мобильных сайтов с загрузочным CDN и шаблонами стартовой страницы.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="nav cabinet-menu footer-nav text-right">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

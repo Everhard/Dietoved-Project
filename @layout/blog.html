@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="cabinet-panel">
+    <header class="header">
+        <a href="admin-panel.html" class="logo">
+            <img src="img/logo-2.png" alt="Диетовед" />
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-toggle-menu" data-toggle-element=".cabinet-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+                    </button>
+                    <ul class="nav cabinet-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="user-header-panel">
+                        <div class="btn-group user-panel-button">
+                            <div class="user-photo">
+                                <img src="img/users/1.jpg" alt="User Name" />
+                            </div>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Name
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/user.svg" alt="Профиль" />
+                                    </i>
+                                    <span class="drop-item-text">Профиль</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/server.svg" alt="Сервис" />
+                                    </i>
+                                    <span class="drop-item-text">Сервис</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/graduation-cap-outline.svg" alt="Обучение" />
+                                    </i>
+                                    <span class="drop-item-text">Обучение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="post-filter-panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <button
+                                class="btn btn-gradient btn-filter"
+                        >Фильтр</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <div class="dropdown select text-right">
+                            <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Выберите раздел
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item">ПП</span>
+                                <span class="dropdown-item">Тренировки</span>
+                                <span class="dropdown-item">Для новичков</span>
+                                <span class="dropdown-item">Быстрый старт</span>
+                                <span class="dropdown-item">Раздел</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <div class="dropdown select text-right">
+                            <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Сортировать
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item">по дате публикации</span>
+                                <span class="dropdown-item">по популярности</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item mb-2 mb-md-0">
+                        <div class="input-group search">
+                            <input type="text" class="form-control bg" placeholder="Поиск" aria-label="Поиск" />
+                            <div class="input-group-append">
+                                <button class="btn btn-gradient" type="button">
+                                    <i class="btn-icon">
+                                        <img src="img/icons/search.png" alt="Поиск" />
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cabinet-content-section full-width blog-grid-theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card post-item">
+                        <div class="card-block text-center">
+                            <p class="post-category">Быстрый старт</p>
+                            <a href="post.html" class="post-photo">
+                                <img class="card-img-top" data-src="https://media.istockphoto.com/photos/medicine-doctor-and-stethoscope-in-hand-touching-icon-medical-network-picture-id823767128?s=2048x2048" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Правильное питание и сколько это стоит</h5>
+                                <a href="post.html" class="link-more">Читать полностью</a>
+                                <hr class="hr" />
+                                <p>
+                                    <span class="user-photo xl">
+                                        <img src="img/users/1.jpg" alt="User" />
+                                    </span>
+                                    <span class="author-title">Вахтирян Сердюк Сергійович</span>
+                                </p>
+                                <div class="post-inf date">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                </div>
+                                <div class="post-inf comments">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">21</p>
+                                </div>
+                                <div class="post-inf views">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">58</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card post-item">
+                        <div class="card-block text-center">
+                            <p class="post-category">Быстрый старт</p>
+                            <a href="post.html" class="post-photo">
+                                <img class="card-img-top" data-src="http://www.ti.com/content/dam/ticom/images/themes/medical/healthcare-on-smartphone-dm5780.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Тренировка силы воли, или как не есть после 6</h5>
+                                <a href="post.html" class="link-more">Читать полностью</a>
+                                <hr class="hr" />
+                                <p>
+                                    <span class="user-photo xl">
+                                        <img src="img/users/1.jpg" alt="User" />
+                                    </span>
+                                    <span class="author-title">Вахтирян Сердюк Сергійович</span>
+                                </p>
+                                <div class="post-inf date">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                </div>
+                                <div class="post-inf comments">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">21</p>
+                                </div>
+                                <div class="post-inf views">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">58</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card post-item">
+                        <div class="card-block text-center">
+                            <p class="post-category">Быстрый старт</p>
+                            <a href="post.html" class="post-photo">
+                                <img class="card-img-top" data-src="https://media.istockphoto.com/photos/medicine-doctor-and-stethoscope-in-hand-touching-icon-medical-network-picture-id823767128?s=2048x2048" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Правильное питание и сколько это стоит</h5>
+                                <a href="post.html" class="link-more">Читать полностью</a>
+                                <hr class="hr" />
+                                <p>
+                                    <span class="user-photo xl">
+                                        <img src="img/users/1.jpg" alt="User" />
+                                    </span>
+                                    <span class="author-title">Вахтирян Сердюк Сергійович</span>
+                                </p>
+                                <div class="post-inf date">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                </div>
+                                <div class="post-inf comments">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">21</p>
+                                </div>
+                                <div class="post-inf views">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">58</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card post-item">
+                        <div class="card-block text-center">
+                            <p class="post-category">Быстрый старт</p>
+                            <a href="post.html" class="post-photo">
+                                <img class="card-img-top" data-src="http://www.ti.com/content/dam/ticom/images/themes/medical/healthcare-on-smartphone-dm5780.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Тренировка силы воли, или как не есть после 6</h5>
+                                <a href="post.html" class="link-more">Читать полностью</a>
+                                <hr class="hr" />
+                                <p>
+                                    <span class="user-photo xl">
+                                        <img src="img/users/1.jpg" alt="User" />
+                                    </span>
+                                    <span class="author-title">Вахтирян Сердюк Сергійович</span>
+                                </p>
+                                <div class="post-inf date">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                </div>
+                                <div class="post-inf comments">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">21</p>
+                                </div>
+                                <div class="post-inf views">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">58</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card post-item">
+                        <div class="card-block text-center">
+                            <p class="post-category">Быстрый старт</p>
+                            <a href="post.html" class="post-photo">
+                                <img class="card-img-top" data-src="https://media.istockphoto.com/photos/medicine-doctor-and-stethoscope-in-hand-touching-icon-medical-network-picture-id823767128?s=2048x2048" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Правильное питание и сколько это стоит</h5>
+                                <a href="post.html" class="link-more">Читать полностью</a>
+                                <hr class="hr" />
+                                <p>
+                                    <span class="user-photo xl">
+                                        <img src="img/users/1.jpg" alt="User" />
+                                    </span>
+                                    <span class="author-title">Вахтирян Сердюк Сергійович</span>
+                                </p>
+                                <div class="post-inf date">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                </div>
+                                <div class="post-inf comments">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">21</p>
+                                </div>
+                                <div class="post-inf views">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">58</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card post-item">
+                        <div class="card-block text-center">
+                            <p class="post-category">Быстрый старт</p>
+                            <a href="post.html" class="post-photo">
+                                <img class="card-img-top" data-src="http://www.ti.com/content/dam/ticom/images/themes/medical/healthcare-on-smartphone-dm5780.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Тренировка силы воли, или как не есть после 6</h5>
+                                <a href="post.html" class="link-more">Читать полностью</a>
+                                <hr class="hr" />
+                                <p>
+                                    <span class="user-photo xl">
+                                        <img src="img/users/1.jpg" alt="User" />
+                                    </span>
+                                    <span class="author-title">Вахтирян Сердюк Сергійович</span>
+                                </p>
+                                <div class="post-inf date">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                </div>
+                                <div class="post-inf comments">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">21</p>
+                                </div>
+                                <div class="post-inf views">
+                                    <div class="post-inf-icon">
+                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                    </div>
+                                    <p class="post-inf-text mb-0">58</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center mb-4 mt-1">
+                        <a href="#"
+                            class="btn btn-gradient btn-filter"
+                        >Загрузить все</a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <nav class="text-center">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#"><span>В начало</span></a></li>
+                            <li class="page-item"><a class="page-link active" href="#"><span>1</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><span>2</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><span>3</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><span>В конец</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="seo-text">
+                        <p>Начните работу с Bootstrap, самым популярным в мире фреймворком для создания быстродействующих мобильных сайтов с загрузочным CDN и шаблонами стартовой страницы.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="nav cabinet-menu footer-nav text-right">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

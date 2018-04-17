@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="cabinet-panel">
+    <header class="header">
+        <a href="admin-panel.html" class="logo">
+            <img src="img/logo-2.png" alt="Диетовед" />
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-toggle-menu" data-toggle-element=".cabinet-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+                    </button>
+                    <ul class="nav cabinet-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="user-header-panel">
+                        <div class="btn-group user-panel-button">
+                            <div class="user-photo">
+                                <img src="img/users/1.jpg" alt="User Name" />
+                            </div>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Name
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/user.svg" alt="Профиль" />
+                                    </i>
+                                    <span class="drop-item-text">Профиль</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/server.svg" alt="Сервис" />
+                                    </i>
+                                    <span class="drop-item-text">Сервис</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/graduation-cap-outline.svg" alt="Обучение" />
+                                    </i>
+                                    <span class="drop-item-text">Обучение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cabinet-sidebar-section">
+        <div class="v-scroll">
+            <ul class="list-group cabinet-sidebar-menu">
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/add-button.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/add-button-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню</p>
+                    </a>
+                </li>
+                <li class="list-group-item active">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/users.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/users-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 2</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/mail.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/mail-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 3</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/notebook.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/notebook-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 4</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/settings.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/settings-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 5</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="cabinet-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card post-theme">
+                        <div class="card-block text-center">
+                            <h4 class="card-title mt-2 float-left">База данных</h4>
+                            <div class="input-group search float-left">
+                                <input type="text" class="form-control bg" placeholder="Найти пользователя" aria-label="Найти пользователя" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-gradient" type="button">
+                                        <i class="btn-icon">
+                                            <img src="img/icons/search.png" alt="Найти пользователя" />
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr class="hr" />
+                            <div class="h-scroll">
+                                <table class="table articles-inf-table">
+                                    <thead>
+                                        <tr>
+                                        <th class="text-left">
+                                            <p>Название продукта</p>
+                                        </th>
+                                        <th>
+                                            <p>Вес, г.</p>
+                                        </th>
+                                        <th>
+                                            <p>Белки</p>
+                                        </th>
+                                        <th>
+                                            <p>Жиры</p>
+                                        </th>
+                                        <th>
+                                            <p>Углеводы</p>
+                                        </th>
+                                        <th>
+                                            <p>Вaода</p>
+                                        </th>
+                                        <th>
+                                            <p>Калории</p>
+                                        </th>
+                                        <th>
+                                            <p>Пищевые волокна</p>
+                                        </th>
+                                        <th>
+                                            <p>Сахар</p>
+                                        </th>
+                                        <th>
+                                            <p>ГИ</p>
+                                        </th>
+                                        <th>
+                                            <p>Витамины</p>
+                                        </th>
+                                        <th>
+                                            <p>Минералы</p>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="text-left">Гречка</p>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="100" class="enable-edit" />
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">A, B, C</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">K, Mg, Ca</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-left">Гречка</p>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="100" class="enable-edit" />
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">A, B, C</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">K, Mg, Ca</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-left">Гречка</p>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="100" class="enable-edit" />
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">A, B, C</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">K, Mg, Ca</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-left">Гречка</p>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="100" class="enable-edit" />
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">A, B, C</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">K, Mg, Ca</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-left">Гречка</p>
+                                            </td>
+                                            <td>
+                                                <input type="text" value="100" class="enable-edit" />
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">A, B, C</p>
+                                            </td>
+                                            <td>
+                                                <p class="green">K, Mg, Ca</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

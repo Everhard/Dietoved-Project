@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="cabinet-panel">
+    <header class="header">
+        <a href="admin-panel.html" class="logo">
+            <img src="img/logo-2.png" alt="Диетовед" />
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-toggle-menu" data-toggle-element=".cabinet-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+                    </button>
+                    <ul class="nav cabinet-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="user-header-panel">
+                        <div class="btn-group user-panel-button">
+                            <div class="user-photo">
+                                <img src="img/users/1.jpg" alt="User Name" />
+                            </div>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Name
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/user.svg" alt="Профиль" />
+                                    </i>
+                                    <span class="drop-item-text">Профиль</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/server.svg" alt="Сервис" />
+                                    </i>
+                                    <span class="drop-item-text">Сервис</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/graduation-cap-outline.svg" alt="Обучение" />
+                                    </i>
+                                    <span class="drop-item-text">Обучение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="post-filter-panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <button
+                                class="btn btn-gradient btn-filter"
+                        >Фильтр</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <div class="dropdown select text-right">
+                            <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Выберите раздел
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item">ПП</span>
+                                <span class="dropdown-item">Тренировки</span>
+                                <span class="dropdown-item">Для новичков</span>
+                                <span class="dropdown-item">Быстрый старт</span>
+                                <span class="dropdown-item">Раздел</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item text-center mb-2 mb-md-0">
+                        <div class="dropdown select text-right">
+                            <button class="btn btn-bg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Сортировать
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item">по дате публикации</span>
+                                <span class="dropdown-item">по популярности</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-filter-item mb-2 mb-md-0">
+                        <div class="input-group search">
+                            <input type="text" class="form-control bg" placeholder="Поиск" aria-label="Поиск" />
+                            <div class="input-group-append">
+                                <button class="btn btn-gradient" type="button">
+                                    <i class="btn-icon">
+                                        <img src="img/icons/search.png" alt="Поиск" />
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cabinet-content-section full-width">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-11">
+                    <div class="card open-post md-card">
+                        <div class="card-block">
+                            <h5 class="card-title">Тренировка силы воли, или как не есть после 6</h5>
+                            <hr class="hr" />
+                            <div class="post-item">
+                                <div class="row">
+                                    <div class="col-lg-7 pt-lg-3">
+                                        <p class="float-left author-title-wrap">
+                                            <span class="user-photo xl">
+                                                <img src="img/users/1.jpg" alt="User" />
+                                            </span>
+                                            <span class="author-title">
+                                                Вахтирян Сердюк Сергійович
+                                                | <a href="blog.html">All posts</a>
+                                            </span>
+                                        </p>
+
+                                        <div class="post-inf comments">
+                                            <div class="post-inf-icon">
+                                                <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                            </div>
+                                            <p class="post-inf-text mb-0">21</p>
+                                        </div>
+                                        <div class="post-inf views">
+                                            <div class="post-inf-icon">
+                                                <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                            </div>
+                                            <p class="post-inf-text mb-0">58</p>
+                                        </div>
+                                        <div class="post-inf date">
+                                            <div class="post-inf-icon">
+                                                <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                            </div>
+                                            <p class="post-inf-text mb-0">22/09/2018</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="post-share-wrap text-center text-lg-right">
+                                            <div class="share"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-9 col-lg-8">
+                                        <div class="open-post-text">
+                                            <p>Имеется разница в книгопечатании еще в xvi веке символов на кириллице. Том языке, который планируется использовать в длине. Рыбы текст на сайтах и смысловую нагрузку. Вида контента, просмотра шрифтов, абзацев отступов. Контента, просмотра шрифтов, абзацев, отступов. Для вставки на латыни и смысловую нагрузку. Нести совсем необязательно языками, использующими латинский алфавит, могут возникнуть небольшие проблемы. Смысловую нагрузку ему нести совсем необязательно этот, несмотря на сайтах.</p>
+                                            <p>Слова, получив текст-рыбу, широко используемый и слова, получив текст-рыбу, широко используемый. Те или иные буквы встречаются с разной частотой имеется. Широко используемый и демонстрации внешнего вида контента просмотра. Буквы встречаются с использованием lorem ipsum на руку. Чему появляется возможность получить более длинный неповторяющийся набор слов.. Книгопечатник вырвал отдельные фразы и даже с использованием. О пределах добра и зла средневековый книгопечатник вырвал отдельные фразы и слова.</p>
+                                            <p>Является знаменитый lorem ipsum на интернет-страницы и т.д языках. Конечно, возникают некоторые вопросы, связанные. Некоторые вопросы, связанные с разной частотой. Использующими латинский алфавит, могут возникнуть небольшие. Восприятия макета считается, что такое. Вариантов lorem ipsum обязан древнеримскому философу цицерону, ведь именно. Генераторы, создающие собственные варианты текста. Благодаря чему появляется возможность получить более длинный неповторяющийся набор слов.. Контент – написание символов на сайтах и.</p>
+                                            <p>Имеется разница в книгопечатании еще в xvi веке символов на кириллице. Том языке, который планируется использовать в длине. Рыбы текст на сайтах и смысловую нагрузку. Вида контента, просмотра шрифтов, абзацев отступов. Контента, просмотра шрифтов, абзацев, отступов. Для вставки на латыни и смысловую нагрузку. Нести совсем необязательно языками, использующими латинский алфавит, могут возникнуть небольшие проблемы. Смысловую нагрузку ему нести совсем необязательно этот, несмотря на сайтах.</p>
+                                            <p>Является знаменитый lorem ipsum на интернет-страницы и т.д языках. Конечно, возникают некоторые вопросы, связанные. Некоторые вопросы, связанные с разной частотой. Использующими латинский алфавит, могут возникнуть небольшие. Восприятия макета считается, что такое. Вариантов lorem ipsum обязан древнеримскому философу цицерону, ведь именно. Генераторы, создающие собственные варианты текста. Благодаря чему появляется возможность получить более длинный неповторяющийся набор слов.. Контент – написание символов на сайтах и.</p>
+                                            <div class="tags-list">
+                                                <p class="tag">#питание</p><p class="tag">#треноровка</p><p class="tag">#сила</p><p class="tag">#воли</p>
+                                            </div>
+                                            <hr class="hr" />
+                                            <div class="post-share-wrap text-center text-lg-left">
+                                                <div class="share"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4">
+                                        <div class="photo">
+                                            <img data-src="https://www.mediagrouponlineinc.com/wp-content/uploads/2017/10/sales-training_87676918-1000x640.jpg" alt="some text" />
+                                        </div>
+                                        <h5 class="card-title black mb-0 mt-4">Похожие</h5>
+                                        <hr class="hr mb-4 mt-2" />
+                                        <div class="similar-posts">
+                                            <div class="post-item mt-3">
+                                                <p class="post-title mb-1">Правильное питание и сколько это стоит</p>
+                                                <div class="post-inf date">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                                </div>
+                                                <div class="post-inf comments">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">21</p>
+                                                </div>
+                                                <div class="post-inf views">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">58</p>
+                                                </div>
+                                            </div>
+                                            <div class="post-item mt-3">
+                                                <p class="post-title mb-1">Правильное питание и сколько это стоит</p>
+                                                <div class="post-inf date">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                                </div>
+                                                <div class="post-inf comments">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">21</p>
+                                                </div>
+                                                <div class="post-inf views">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">58</p>
+                                                </div>
+                                            </div>
+                                            <div class="post-item mt-3">
+                                                <p class="post-title mb-1">Правильное питание и сколько это стоит</p>
+                                                <div class="post-inf date">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/calendar.svg" alt="Дата публикации" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">22/09/2018</p>
+                                                </div>
+                                                <div class="post-inf comments">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/comment.svg" alt="Количество коминтареев" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">21</p>
+                                                </div>
+                                                <div class="post-inf views">
+                                                    <div class="post-inf-icon">
+                                                        <img src="img/icons/eye.svg" alt="Количество просмотров" />
+                                                    </div>
+                                                    <p class="post-inf-text mb-0">58</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-11">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card open-post review-card">
+                                <div class="card-block">
+                                    <h5 class="card-title black">Обсуждение</h5>
+                                    <hr class="hr" />
+                                    <form   class="form">
+                                        <div class="input-group-prepend review-area mb-4">
+                                            <textarea name="message" cols="5" rows="3" class="form-control bg-form-control" placeholder="Введите ваше сообщение ..."></textarea>
+                                        </div>
+                                        <button
+                                                type="button"
+                                                class="btn btn-gradient"
+                                        >
+                                            Отправить
+                                        </button>
+                                    </form>
+                                    <div class="reviews-wrap">
+                                        <div class="review-item">
+                                            <div class="message review-theme">
+                                                <div class="user-photo">
+                                                    <img src="img/users/user.jpg" alt="some text">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="user-title">User Name</p>
+                                                    <p class="message-text">Lorem ipsum dolor sit amet, cum ne paulo Loremipsum dolor sitamet, cum ne paulo </p>
+                                                    <button class="add-new add-comment">
+                                                        + ответить
+                                                    </button>
+                                                </div>
+                                                <form   class="form review-form">
+                                                    <div class="input-group-prepend review-area mb-4">
+                                                        <textarea name="message" cols="5" rows="3" class="form-control bg-form-control" placeholder="Введите ваше сообщение ..."></textarea>
+                                                    </div>
+                                                    <button
+                                                            type="button"
+                                                            class="btn btn-gradient"
+                                                    >
+                                                        Отправить
+                                                    </button>
+                                                </form>
+                                                <div class="answer-wrap">
+                                                    <div class="message review-theme">
+                                                        <div class="user-photo">
+                                                            <img src="img/users/admin.jpg" alt="some text">
+                                                        </div>
+                                                        <div class="text">
+                                                            <p class="user-title">User Name</p>
+                                                            <p class="message-text">Lorem ipsum dolor sit amet, cum ne paulo Loremipsum dolor sitamet, cum ne paulo </p>
+                                                            <button class="add-new add-comment">
+                                                                + ответить
+                                                            </button>
+                                                        </div>
+                                                        <form   class="form review-form">
+                                                            <div class="input-group-prepend review-area mb-4">
+                                                                <textarea name="message" cols="5" rows="3" class="form-control bg-form-control" placeholder="Введите ваше сообщение ..."></textarea>
+                                                            </div>
+                                                            <button
+                                                                    type="button"
+                                                                    class="btn btn-gradient"
+                                                            >
+                                                                Отправить
+                                                            </button>
+                                                        </form>
+                                                        <div class="answer-wrap"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-item">
+                                            <div class="message review-theme">
+                                                <div class="user-photo">
+                                                    <img src="img/users/1.jpg" alt="some text">
+                                                </div>
+                                                <div class="text">
+                                                    <p class="user-title">User Name</p>
+                                                    <p class="message-text">Lorem ipsum dolor sit amet, cum ne paulo Loremipsum dolor sitamet, cum ne paulo, Lorem ipsum dolor sit amet, cum ne paulo Loremipsum dolor sitamet, cum ne paulo</p>
+                                                    <button class="add-new add-comment">
+                                                        + ответить
+                                                    </button>
+                                                </div>
+                                                <form   class="form review-form">
+                                                    <div class="input-group-prepend review-area mb-4">
+                                                        <textarea name="message" cols="5" rows="3" class="form-control bg-form-control" placeholder="Введите ваше сообщение ..."></textarea>
+                                                    </div>
+                                                    <button
+                                                            type="button"
+                                                            class="btn btn-gradient"
+                                                    >
+                                                        Отправить
+                                                    </button>
+                                                </form>
+                                                <div class="answer-wrap"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="seo-text">
+                        <p>Начните работу с Bootstrap, самым популярным в мире фреймворком для создания быстродействующих мобильных сайтов с загрузочным CDN и шаблонами стартовой страницы.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="nav cabinet-menu footer-nav text-right">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

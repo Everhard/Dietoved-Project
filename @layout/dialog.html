@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="admin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Диетовед</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="wrapper" class="cabinet-panel">
+    <header class="header">
+        <a href="admin-panel.html" class="logo">
+            <img src="img/logo-2.png" alt="Диетовед" />
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn-toggle-menu" data-toggle-element=".cabinet-menu">
+                <span class="toggle-menu-wrap">
+                    <i></i><i></i><i></i>
+                </span>
+                    </button>
+                    <ul class="nav cabinet-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Рейтинг специалистов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="user-header-panel">
+                        <div class="btn-group user-panel-button">
+                            <div class="user-photo">
+                                <img src="img/users/1.jpg" alt="User Name" />
+                            </div>
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Name
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/user.svg" alt="Профиль" />
+                                    </i>
+                                    <span class="drop-item-text">Профиль</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/server.svg" alt="Сервис" />
+                                    </i>
+                                    <span class="drop-item-text">Сервис</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <i class="drop-item-icon">
+                                        <img src="img/icons/graduation-cap-outline.svg" alt="Обучение" />
+                                    </i>
+                                    <span class="drop-item-text">Обучение</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cabinet-sidebar-section">
+        <div class="v-scroll">
+            <ul class="list-group cabinet-sidebar-menu">
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/add-button.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/add-button-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню</p>
+                    </a>
+                </li>
+                <li class="list-group-item active">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/users.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/users-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 2</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/mail.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/mail-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 3</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/notebook.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/notebook-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 4</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="item-icon">
+                            <img src="img/cabinet-sidebar/settings.svg" alt="Пункт меню">
+                            <img src="img/cabinet-sidebar/settings-active.svg" class="active-icon" alt="Пункт меню">
+                        </div>
+                        <p>Пункт меню 5</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="cabinet-content-section dialog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card dialog-wrap">
+                        <div class="card-block">
+                            <div class="dialog-wrap-title">
+                                <h5 class="card-title float-left">
+                                    Переписка с
+                                    <span class="black">Мирандою Мигела</span>
+                                </h5>
+                                <hr class="hr" />
+                            </div>
+                            <div class="row">
+                                <div class="col-12 d-md-flex">
+                                    <div class="dialog-content">
+                                        <div class="v-scroll">
+                                            <div class="messages-aerodrome">
+                                            </div>
+                                        </div>
+                                        <form class="input-group-prepend article-title-input write-message">
+                                            <input type="text" class="form-control bg-form-control" placeholder="Введите ваше сообщение ..." aria-label="Введите ваше сообщение ...">
+                                            <div class="input-group-append">
+                                                <label class="btn attachment-file">
+                                                    <input type="file" />
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/paper-clip.svg" alt="Прикрепить файл">
+                                                    </i>
+                                                </label>
+                                                <button class="btn btn-gradient send-message" type="submit">
+                                                    <i class="btn-icon">
+                                                        <img src="img/icons/send-button.svg" alt="Одправить сообщение">
+                                                    </i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="attachment-list d-flex flex-md-column align-content-center">
+                                        <li>
+                                            <label class="attachment-item">
+                                                <input type="file" name="menu" />
+                                                <i class="attachment-icon">
+                                                    <img src="img/icons/menu.png" alt="Отправить меню" />
+                                                </i>
+                                                <span class="attachment-title">Отправить меню</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="attachment-item">
+                                                <input type="file" name="menu" />
+                                                <i class="attachment-icon">
+                                                    <img src="img/icons/file.png" alt="Отправить данные измерений" />
+                                                </i>
+                                                <span class="attachment-title">Отправить данные измерений</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="attachment-item">
+                                                <input type="file" name="menu" />
+                                                <i class="attachment-icon">
+                                                    <img src="img/icons/img.png" alt="Отправить изображение" />
+                                                </i>
+                                                <span class="attachment-title">Отправить изображение</span>
+                                            </label>
+                                        </li>
+                                        <li class="d-md-block d-none">
+                                            <input type="radio" checked name="type-user" id="user">
+                                            <label class="form-check-label" for="user">User</label>
+                                            <br />
+                                            <input type="radio" name="type-user" id="admin">
+                                            <label class="form-check-label" for="admin">Admin</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
