@@ -17,21 +17,21 @@ gulp.task('sass', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./css'))
+        .pipe(gulp.dest('../web/css/'))
         .pipe(livereload());
 });
 
 gulp.task('libs-css', function() {
     return gulp.src('./libs/*.css')
         .pipe(concat('libs.css'))
-        .pipe(gulp.dest('./css/'));
+        .pipe(gulp.dest('../web/css/'));
 });
 
 gulp.task('libs-js', function() {
     return gulp.src(['./libs/jquery-3.2.1.min.js', './libs/jquery.mCustomScrollbar.js', './libs/smoothscrolling.js', './libs/popper.js', './libs/bootstrap.min.js', './libs/jquery.fancybox.min.js', './libs/summernote.js', './libs/bootstrap-datepicker.min.js', './libs/bootstrap-datepicker.ru.min.js', './libs/slick.js', './libs/jquery.canvasjs.min.js', './libs/jquery.timepicker.min.js', './libs/jquery.Jcrop.min.js', './libs/jssocials.js'])
         .pipe(concat('libs.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./js/'));
+        .pipe(gulp.dest('../web/js/'));
 });
 
 gulp.task('clean', function() {
@@ -42,13 +42,13 @@ gulp.task('clean', function() {
 gulp.task('scripts', function() {
     return gulp.src('vendor/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('js'))
+        .pipe(gulp.dest('../web/js/'))
 });
 gulp.task('hint', function () {
     var cached  = require('gulp-cached'),
         jshint  = require('gulp-jshint'),
         stylish = require('jshint-stylish');
-    return gulp.src('js/*.js')
+    return gulp.src('../web/js/*.js')
         .pipe(cached('hinting'))
         .pipe(jshint())
         .pipe(jshint.reporter(stylish));
@@ -68,7 +68,7 @@ gulp.task('hint', function () {
 gulp.task('watch', function() {
     gulp.watch('vendor/*.js', ['scripts']);
     gulp.watch('sass/**/*.scss',['sass']);
-    gulp.watch('js/*.js', ['hint']);
+    gulp.watch('../web/js/*.js', ['hint']);
     livereload.listen();
     // gulp.watch('img/*', ['images']);
 });
