@@ -1,11 +1,22 @@
+<?php
+
+use yii\widgets\ActiveForm;
+use yii\helpers\Html;
+use app\assets\AppAsset;
+
+AppAsset::register($this);
+
+?>
+<?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="<?= Yii::$app->language ?>">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="<?= Yii::$app->charset ?>">
     <meta name="author" content="admin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
-    <title>Диетовед</title>
+    <?= Html::csrfMetaTags() ?>
+    <title><?= Html::encode($this->title) ?></title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
 
@@ -23,11 +34,11 @@
     <style media="screen">.main-preloader{position:fixed;top:0;left:0;width:100%;height:100%;z-index:5;background-color:#2ce5bc;overflow:hidden;-webkit-transition:height 1s ease;transition:height 1s ease}.main-preloader.hide{height:0}.load-data-wrap{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);margin:0;text-align:center}.load-data{color:#fff;font-size:32px}.load-progress-wrap{position:relative;width:300px;margin:10px auto 0;height:2px}.load-progress{position:absolute;left:0;width:0;height:100%;background-color:#fff}</style>
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/libs.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
+    <?php $this->head() ?>
 </head>
 <body>
+<?php $this->beginBody() ?>
 
 <div class="main-preloader">
     <figure class="load-data-wrap">
@@ -713,23 +724,53 @@
 
 <div id="register" class="popup">
     <div class="popup-wrap">
-        <form class="form">
+        <?php $form = ActiveForm::begin([
+            'id' => 'sign-up-form',
+            'options' => ['class' => 'form'],
+            'fieldConfig' => [
+                'template' => '{input}',
+                'options' => ['tag' => false],
+            ],
+            'enableAjaxValidation' => true,
+        ]); ?>
             <h2 class="popup-title">Регистрация</h2>
+
+            <div class="field-signupform-email"><div class="help-block"></div></div>
+            <div class="field-signupform-password"><div class="help-block"></div></div>
+
             <div class="input-group mt-4 bg-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <img src="img/icons/mail-outline.svg" class="input-group-icon" alt="Введите ваш E-mail" />
-                    </span>
+                        <span class="input-group-text">
+                            <img src="img/icons/mail-outline.svg" class="input-group-icon" alt="Введите ваш E-mail" />
+                        </span>
                 </div>
-                <input type="email" class="form-control" placeholder="Введите ваш E-mail" aria-label="Введите ваш E-mail">
+
+                <?= $form->field($sign_up_model, 'email', [
+                        'inputOptions' => [
+                            'type' => 'email',
+                            'class' => 'form-control',
+                            'placeholder' => 'Введите ваш E-mail',
+                            'aria-label' => 'Введите ваш E-mail',
+                        ],
+                ]) ?>
+
             </div>
             <div class="input-group mt-4 bg-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <img src="img/icons/padlock.svg" class="input-group-icon" alt="Введите ваш пароль" />
-                    </span>
+                        <span class="input-group-text">
+                            <img src="img/icons/padlock.svg" class="input-group-icon" alt="Введите ваш пароль" />
+                        </span>
                 </div>
-                <input type="password" class="form-control" placeholder="Введите ваш пароль" aria-label="Введите ваш пароль">
+
+                <?= $form->field($sign_up_model, 'password', [
+                    'inputOptions' => [
+                        'type' => 'password',
+                        'class' => 'form-control',
+                        'placeholder' => 'Введите ваш пароль',
+                        'aria-label' => 'Введите ваш пароль',
+                    ],
+                ]) ?>
+
             </div>
             <label class="form-check">
                 <input type="checkbox" class="form-check-input" data-button="sign-up">
@@ -754,7 +795,7 @@
                 </i>
                 <span class="btn-text">Sign in <span>with</span> Google</span>
             </a>
-        </form>
+        <?php ActiveForm::end(); ?>
     </div>
     <div class="more-inf">
         <p>Уже есть аккаунт? <a href="#login" data-fancybox>Войти</a></p>
@@ -842,8 +883,7 @@
     </div>
 </div>
 
-<script src="js/libs.js"></script>
-<script src="js/script.js"></script>
-
+<?php $this->endBody() ?>
 </body>
 </html>
+<?php $this->endPage() ?>

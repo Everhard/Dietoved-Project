@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\SignupForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -9,6 +10,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use yii\widgets\ActiveForm;
 
 class SiteController extends Controller
 {
@@ -61,7 +63,18 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->renderPartial('homepage');
+        $sign_up_model = new SignupForm;
+
+        if (Yii::$app->request->isAjax && $sign_up_model->load(Yii::$app->request->post())) {
+
+            Yii::$app->response->format = Response::FORMAT_JSON;
+
+            return ActiveForm::validate($sign_up_model);
+        }
+
+        return $this->renderPartial('homepage', [
+            'sign_up_model' => $sign_up_model,
+        ]);
     }
 
     /**

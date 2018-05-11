@@ -16,4 +16,7 @@ class AppAsset extends AssetBundle
         'js/libs.js',
         'js/script.js',
     ];
+    public $depends = [
+        'yii\web\JqueryAsset',
+    ];
 }
