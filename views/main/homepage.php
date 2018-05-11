@@ -726,6 +726,7 @@ AppAsset::register($this);
     <div class="popup-wrap">
         <?php $form = ActiveForm::begin([
             'id' => 'sign-up-form',
+            'action' => ['main/sign-up'],
             'options' => ['class' => 'form'],
             'fieldConfig' => [
                 'template' => '{input}',

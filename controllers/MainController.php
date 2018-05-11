@@ -12,7 +12,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use yii\widgets\ActiveForm;
 
-class SiteController extends Controller
+class MainController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -65,6 +65,15 @@ class SiteController extends Controller
     {
         $sign_up_model = new SignupForm;
 
+        return $this->renderPartial('homepage', [
+            'sign_up_model' => $sign_up_model,
+        ]);
+    }
+
+    public function actionSignUp()
+    {
+        $sign_up_model = new SignupForm;
+
         if (Yii::$app->request->isAjax && $sign_up_model->load(Yii::$app->request->post())) {
 
             Yii::$app->response->format = Response::FORMAT_JSON;
@@ -72,9 +81,16 @@ class SiteController extends Controller
             return ActiveForm::validate($sign_up_model);
         }
 
-        return $this->renderPartial('homepage', [
-            'sign_up_model' => $sign_up_model,
-        ]);
+        if ($sign_up_model->load(Yii::$app->request->post())) {
+
+            if ($user = $sign_up_model->signUp()) {
+
+                if (Yii::$app->user->login($user)) {
+
+                    return $this->goHome();
+                }
+            }
+        }
     }
 
     /**

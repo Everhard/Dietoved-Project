@@ -7,6 +7,7 @@ $config = [
     'id' => 'basic',
     'language' => 'ru',
     'basePath' => dirname(__DIR__),
+    'defaultRoute' => 'main',
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -24,7 +25,7 @@ $config = [
             'identityClass' => 'app\models\User',
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'main/error',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',

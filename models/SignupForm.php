@@ -18,4 +18,17 @@ class SignupForm extends Model
             ['email', 'email'],
         ];
     }
+
+    public function signUp()
+    {
+        if (!$this->validate()) {
+            return null;
+        }
+
+        $user = new User();
+        $user->email = $this->email;
+        $user->setPassword($this->password);
+
+        return $user->save() ? $user : null;
+    }
 }
