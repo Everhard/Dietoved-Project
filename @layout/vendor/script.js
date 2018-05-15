@@ -141,6 +141,13 @@ $(document).ready(function () {
 
     });
 
+    $('.submit-button').on('click', function(e) {
+
+        $(this).parent("form").submit();
+
+        e.preventDefault();
+    });
+
     //enable sign up
     $('.form-check-input').on('change', function () {
 
@@ -1065,3 +1072,35 @@ document.addEventListener("fullscreenerror", function(){console.log("Full screen
 document.addEventListener("webkitfullscreenerror", function(){console.log("Full screen failed");});
 document.addEventListener("mozfullscreenerror", function(){console.log("Full screen failed");});
 document.addEventListener("MSFullscreenError", function(){console.log("Full screen failed");});
+
+/* Application logic */
+
+/* Sign up */
+$("#sign-up-form").on('beforeSubmit', function(e) {
+
+    var form = $(this);
+    var formData = form.serialize();
+
+    $.ajax({
+        url:    form.attr("action"),
+        type:   form.attr("method"),
+        data:   formData,
+        success: function (data) {
+
+            if (data == "OK") {
+                $.fancybox.close(true);
+                $.fancybox.open({src:'#check-email'});
+
+                $("#create-account-button").data('src', '#check-email');
+
+            } else {
+                this.error();
+            }
+        },
+        error: function () {
+            alert("Something went wrong! Please contact administrator!");
+        }
+    });
+}).on('submit', function(e) {
+    e.preventDefault();
+});

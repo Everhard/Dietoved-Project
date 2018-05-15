@@ -64,7 +64,7 @@ AppAsset::register($this);
                 </div>
                 <div class="col-md-8 col-sm-6 col-6">
                     <div class="sign-panel">
-                        <button type="button" class="btn btn-bg white btn-register" data-fancybox data-src="#register">Создать аккаунт</button>
+                        <button type="button" id="create-account-button" class="btn btn-bg white btn-register" data-fancybox data-src="#register">Создать аккаунт</button>
                         <button type="button" class="btn btn-border white btn-login" data-fancybox data-src="#login">
                             <i class="btn-icon">
                                 <img src="img/icons/man-user.svg" alt="Login" />
@@ -778,10 +778,9 @@ AppAsset::register($this);
                 <span class="form-check-icon"></span>
                 <span class="form-check-label">Согласен с <a href="#">условиями использования сервиса</a></span>
             </label>
-            <a href="#check-email"
-               class="btn btn-gradient btn-lg disabled"
+            <a href="#"
+               class="btn btn-gradient btn-lg disabled submit-button"
                data-button="sign-up"
-               data-fancybox
             >Регистрация</a>
             <p>или</p>
             <a href="#" class="btn btn-social-login facebook mt-3">

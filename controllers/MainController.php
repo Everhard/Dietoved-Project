@@ -78,17 +78,18 @@ class MainController extends Controller
 
             Yii::$app->response->format = Response::FORMAT_JSON;
 
-            return ActiveForm::validate($sign_up_model);
-        }
+            /*
+             * Validation:
+             */
+            if (Yii::$app->request->post('ajax')) {
+                return ActiveForm::validate($sign_up_model);
+            }
 
-        if ($sign_up_model->load(Yii::$app->request->post())) {
-
+            /*
+             * Sign up:
+             */
             if ($user = $sign_up_model->signUp()) {
-
-                if (Yii::$app->user->login($user)) {
-
-                    return $this->goHome();
-                }
+                return "OK";
             }
         }
     }
